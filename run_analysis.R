@@ -16,7 +16,7 @@ msIndices <- function(fn) {
   fNames <- character()
   for (l in seq_along(lines)) {
     text = lines[l]
-    if ( (grepl("mean", text) && !grepl("meanFreq", text))
+    if ( grepl("mean", text)
           || grepl("std", text))
     {
       fIndex <- c(fIndex, l)
