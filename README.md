@@ -9,7 +9,7 @@ Overall workflow for run_analysis.R:
 4. An output called "tidyset.txt" shall be produced in the same directory.
 
 The design/implementation details of run_analysis.R:
-1. It first reads the "features.txt" and remembers the indices and names of only the "mean" and "std" features.
-2. Reads test and training data sets, taking into consideration subjects also.
-3. Merge test and training data sets, i.e. perform a full left join (dplyr).
-4. Aggregate the joined data set by subject and perform "average" function on all other variables.
+* It first reads the "features.txt" and remembers the indices and names of only the "mean" and "std" features.
+* Reads test and training data sets, taking into consideration subjects also.
+* Merge test and training data sets, i.e. perform a full left join (dplyr).
+* Aggregate the joined data set by subject and perform "average" function on all other variables.
